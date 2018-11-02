@@ -25,4 +25,13 @@ class CardServiceProvider extends ServiceProvider
             Nova::style('nova-countdown', __DIR__.'/../dist/css/card.css');
         });
     }
+
+    /**
+     * Register the card's routes.
+     *
+     * @return void
+     */
+    protected function routes()
+    {
+    }
 }
