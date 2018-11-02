@@ -1,0 +1,43 @@
+{
+    "name": "swooinc/nova-countdown",
+    "description": "A countdown card for Laravel Nova.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "countdown",
+        "cards"
+    ],
+    "authors": [
+        {
+            "name": "Chin Leung",
+            "email": "chin@swoo.ca"
+        },
+        {
+            "name": "Jonathan Simard",
+            "email": "jonathan@swoo.ca"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "laravel/nova": "*",
+        "illuminate/support": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Swooinc\\NovaCountdown\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Swooinc\\NovaCountdown\\CardServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
