@@ -15,11 +15,16 @@ composer require swooinc/nova-countdown
 You can pass it a Carbon instance for the countdown.
 
 ```php
+// app/Nova/User.php
+
+namespace App\Nova;
 
 use Swooinc\NovaCountdown\NovaCountdown;
 
 class User extends Resource
 {
+    ...
+    
     /**
      * Get the cards available for the request.
      *
