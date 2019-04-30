@@ -15,16 +15,25 @@ composer require swooinc/nova-countdown
 You can pass it a Carbon instance for the countdown.
 
 ```php
+
 use Swooinc\NovaCountdown\NovaCountdown;
 
-...
-
-protected function cards()
+class User extends Resource
 {
-  return [
-    (new NovaCountdown)->to(now()->addDays(30))
-      ->label('30 Days Later'),
-  ];
+    /**
+     * Get the cards available for the request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return array
+     */
+    public function cards(Request $request)
+    {
+        return [
+            (new NovaCountdown)
+                ->to(now()->addDays(30))
+                ->label('30 Days Later'),
+        ];
+    }
 }
 ```
 
