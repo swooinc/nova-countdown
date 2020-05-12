@@ -2,7 +2,7 @@
 
 namespace Swooinc\NovaCountdown;
 
-use Illuminate\Support\Carbon;
+use Carbon\Carbon;
 use Laravel\Nova\Card;
 
 class NovaCountdown extends Card
@@ -53,7 +53,7 @@ class NovaCountdown extends Card
     /**
      * Set the end date of the countdown.
      *
-     * @param  \Illuminate\Support\Carbon  $date
+     * @param  \Carbon\Carbon  $date
      * @return self
      */
     public function to(Carbon $date)
