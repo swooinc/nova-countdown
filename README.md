@@ -12,9 +12,7 @@ composer require swooinc/nova-countdown
 
 ## Usage
 
-You can pass it a Carbon instance for the countdown.
-
-### app/Nova/User.php
+You can pass a Carbon instance for the countdown.
 
 ```php
 <?php
